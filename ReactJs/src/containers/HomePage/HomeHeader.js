@@ -34,7 +34,7 @@ class HomeHeader extends Component {
                                 <div className='subs-title'><FormattedMessage id="home-header.select-doctor" /></div>
                             </div>
                             <div className='child-content'>
-                                <div><b><FormattedMessage id="home-header.homeheader.fee" /></b></div>
+                                <div><b><FormattedMessage id="home-header.fee" /></b></div>
                                 <div className='subs-title'><FormattedMessage id="home-header.check-health" /></div>
                             </div>
                         </div>
@@ -97,6 +97,7 @@ class HomeHeader extends Component {
 const mapStateToProps = state => {
     return {
         isLoggedIn: state.user.isLoggedIn,
+        userInfo: state.user.userInfo,
         language: state.app.language
     };
 };

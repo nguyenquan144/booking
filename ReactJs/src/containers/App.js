@@ -12,7 +12,6 @@ import { path } from '../utils'
 
 import Home from '../routes/Home';
 import Login from './Auth/Login';
-import Header from './Header/Header';
 import System from '../routes/System';
 
 import { CustomToastCloseButton } from '../components/CustomToast';
@@ -45,9 +44,9 @@ class App extends Component {
             <Fragment>
                 <Router history={history}>
                     <div className="main-container">
-                        {this.props.isLoggedIn && <Header />}
+
                         <div className="content-container">
-                            <CustomScrollbars style={{height:'100vh',width:'100%'}}>
+                            <CustomScrollbars style={{ height: '100vh', width: '100%' }}>
                                 <Switch>
                                     <Route path={path.HOME} exact component={(Home)} />
                                     <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} />
@@ -59,11 +58,24 @@ class App extends Component {
 
                         </div>
 
-                        <ToastContainer
+                        {/* <ToastContainer
                             className="toast-container" toastClassName="toast-item" bodyClassName="toast-item-body"
                             autoClose={false} hideProgressBar={true} pauseOnHover={false}
                             pauseOnFocusLoss={true} closeOnClick={false} draggable={false}
                             closeButton={<CustomToastCloseButton />}
+                        /> */}
+
+                        <ToastContainer
+                            position="bottom-right"
+                            autoClose={5000}
+                            hideProgressBar={false}
+                            newestOnTop={false}
+                            closeOnClick
+                            rtl={false}
+                            pauseOnFocusLoss
+                            draggable
+                            pauseOnHover
+                            // theme="dark"
                         />
                     </div>
                 </Router>
