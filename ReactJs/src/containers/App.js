@@ -66,7 +66,7 @@ class App extends Component {
                         /> */}
 
                         <ToastContainer
-                            position="bottom-right"
+                            position="top-right"
                             autoClose={5000}
                             hideProgressBar={false}
                             newestOnTop={false}
@@ -75,7 +75,7 @@ class App extends Component {
                             pauseOnFocusLoss
                             draggable
                             pauseOnHover
-                            // theme="dark"
+                        // theme="dark"
                         />
                     </div>
                 </Router>

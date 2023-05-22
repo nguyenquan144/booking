@@ -119,7 +119,8 @@ let createNewUser = (data) => {
                     phonenumber: data.phonenumber,
                     gender: data.gender,
                     roleId: data.roleId,
-                    positionId: data.positionId
+                    positionId: data.positionId,
+                    image: data.avatar
                 })
                 resolve({
                     errCode: 0,
@@ -164,30 +165,35 @@ let updateUserData = (data) => {
                     errMessage: 'Missing required parameters'
                 })
             }
-            let user = await db.User.findOne({
-                where: { id: data.id },
-                raw: false
-            })
-            if (user) {
-                user.firstName = data.firstName;
-                user.lastName = data.lastName;
-                user.address = data.address;
-                user.roleId = data.roleId,
-                    user.positionId = data.positionId;
-                user.gender = data.gender;
-                user.phonenumber = data.phonenumber;
-
-                await user.save();
-
-                resolve({
-                    errCode: 0,
-                    message: 'Update the user succeeds!'
+            else {
+                let user = await db.User.findOne({
+                    where: { id: data.id },
+                    raw: false
                 })
-            } else {
-                resolve({
-                    errCode: 1,
-                    errMessage: `User not found!`
-                });
+                if (user) {
+                    user.firstName = data.firstName;
+                    user.lastName = data.lastName;
+                    user.address = data.address;
+                    user.roleId = data.roleId,
+                        user.positionId = data.positionId;
+                    user.gender = data.gender;
+                    user.phonenumber = data.phonenumber;
+                    if (data.avatar) {
+                        user.image = data.avatar;
+
+                    }
+                    await user.save();
+
+                    resolve({
+                        errCode: 0,
+                        message: 'Update the user succeeds!'
+                    })
+                } else {
+                    resolve({
+                        errCode: 1,
+                        errMessage: `User not found!`
+                    });
+                }
             }
         } catch (e) {
             reject(e);

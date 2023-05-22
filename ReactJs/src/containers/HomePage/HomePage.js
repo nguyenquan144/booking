@@ -16,7 +16,7 @@ class HomePage extends Component {
         let settings = {
 
             dots: false,
-            isfinite: true,
+            infinite: false,//vô hạn : đẩy ảnh về bên phải
             speed: 500,
             slidesToShow: 4,
             slidesToScroll: 1,
