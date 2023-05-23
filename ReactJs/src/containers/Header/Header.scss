@@ -1,19 +1,19 @@
 @import "../../styles/common.scss";
 
 .header-container {
-    z-index: 99;
-    display: flex;
-    justify-content: space-between;
+    z-index         : 99;
+    display         : flex;
+    justify-content : space-between;
     background-color: $colormain;
-    color: $common-text-color;
-    height: 40px;
-    position: relative;
+    color           : $common-text-color;
+    height          : 40px;
+    position        : relative;
 
     .btn-logout {
-        color: $common-text-color;
+        color      : $common-text-color;
         line-height: 40px;
-        height: 40px;
-        padding: 0 10px;
+        height     : 40px;
+        padding    : 0 10px;
 
         &:hover {
             background-color: darken($colormain, 5);
@@ -25,17 +25,18 @@
     }
 
     .languages {
-        .welcome{
+        .welcome {
             margin-right: 10px;
         }
+
         .language-en {
             margin-right: 15px;
-            margin-left: 10px;
-            cursor: pointer;
+            margin-left : 10px;
+            cursor      : pointer;
 
             &.active {
                 opacity: 1;
-                color: #30d663;
+                color  : #30d663;
             }
         }
 
@@ -44,7 +45,7 @@
 
             &.active {
                 opacity: 1;
-                color: orange;
+                color  : orange;
             }
         }
     }

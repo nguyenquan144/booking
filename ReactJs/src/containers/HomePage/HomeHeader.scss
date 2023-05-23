@@ -1,73 +1,73 @@
 .home-header-container {
-    height: 65px;
-    width: 100%;
-    padding: 0 40px;
-    position: sticky;
-    top: 0;
-    z-index: 10000;
+    height          : 65px;
+    width           : 100%;
+    padding         : 0 40px;
+    position        : sticky;
+    top             : 0;
+    z-index         : 10000;
     background-color: white;
 
     .home-header-content {
-        width: 100%;
-        height: 100%;
+        width  : 100%;
+        height : 100%;
         display: flex;
 
         .left-content {
-            width: 30%;
-            display: flex;
+            width      : 30%;
+            display    : flex;
             align-items: center;
 
             .header-logo {
                 background: url('../../assets/logo.svg') center center no-repeat;
-                height: 100%;
-                width: 100%;
-                cursor: pointer;
+                height    : 100%;
+                width     : 100%;
+                cursor    : pointer;
             }
 
             i {
-                font-size: 25px;
+                font-size   : 25px;
                 margin-right: -50px;
-                color: gray;
+                color       : gray;
             }
         }
 
         .center-content {
-            width: 55%;
-            display: flex;
+            width          : 55%;
+            display        : flex;
             justify-content: space-between;
-            align-items: center;
+            align-items    : center;
 
             .child-content {
 
                 .subs-title {
-                    font-size: 12px;
+                    font-size  : 12px;
                     font-weight: 40px;
                 }
             }
         }
 
         .right-content {
-            width: 25%;
-            display: flex;
+            width          : 25%;
+            display        : flex;
             justify-content: flex-end;
-            align-items: center;
+            align-items    : center;
         }
 
         .support {
             padding-right: 50px;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            font-weight: 100;
+            display      : flex;
+            align-items  : center;
+            cursor       : pointer;
+            font-weight  : 100;
 
             i {
-                font-size: 15px;
+                font-size   : 15px;
                 margin-right: 5px;
             }
         }
 
         .language-vi {
-            cursor: pointer;
+            cursor : pointer;
             opacity: 0.8;
 
             &.active {
@@ -85,8 +85,8 @@
         }
 
         .language-en {
-            margin: 0 10px;
-            cursor: pointer;
+            margin : 0 10px;
+            cursor : pointer;
             opacity: 0.8;
 
             &.active {
@@ -108,97 +108,97 @@
 }
 
 .home-header-banner {
-    background-image: url('../../assets/header-background.svg');
-    height: 570px;
-    background-repeat: no-repeat;
+    background-image   : url('../../assets/header-background.svg');
+    height             : 570px;
+    background-repeat  : no-repeat;
     background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+    background-size    : cover;
+    display            : flex;
+    flex-direction     : column;
 
     .content-up {
-        padding-top: 40px;
-        height: 46%;
+        padding-top     : 40px;
+        height          : 46%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
 
         .title1 {
-            text-align: center;
-            font-size: 35px;
-            text-shadow: 1px 1px 1px #333;
+            text-align   : center;
+            font-size    : 35px;
+            text-shadow  : 1px 1px 1px #333;
             margin-bottom: 5px;
-            margin-top: 30px;
-            color: white;
+            margin-top   : 30px;
+            color        : white;
         }
 
         .title2 {
-            text-align: center;
-            font-size: 35px;
-            text-shadow: 1px 1px 1px #333;
-            color: white;
+            text-align   : center;
+            font-size    : 35px;
+            text-shadow  : 1px 1px 1px #333;
+            color        : white;
             margin-bottom: 90px;
         }
 
         .search {
-            width: fit-content;
-            display: flex;
+            width          : fit-content;
+            display        : flex;
             justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            padding: 10px;
-            border-radius: 25px;
-            background: #e6dc9f;
+            align-items    : center;
+            margin         : 0 auto;
+            padding        : 10px;
+            border-radius  : 25px;
+            background     : #e6dc9f;
 
             i {
                 margin: 0 5px;
             }
 
             input {
-                height: 30px;
-                width: 360px;
+                height    : 30px;
+                width     : 360px;
                 background: transparent;
-                border: none;
-                outline: none;
+                border    : none;
+                outline   : none;
             }
         }
     }
 
     .content-down {
-        height: 55%;
-        padding-bottom: 10px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        height          : 55%;
+        padding-bottom  : 10px;
+        display         : flex;
+        align-items     : flex-end;
+        justify-content : center;
         background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, -1.1), rgba(255, 255, 255, 1));
 
         .options {
-            text-align: center;
-            display: flex;
-            gap: 50px;
+            text-align     : center;
+            display        : flex;
+            gap            : 50px;
             justify-content: center;
 
             .option-child {
-                width: 100px;
+                width        : 100px;
                 margin-bottom: 40px;
 
                 .icon-child {
-                    background: white;
-                    width: 40px;
-                    height: 40px;
-                    padding: 10px;
+                    background   : white;
+                    width        : 40px;
+                    height       : 40px;
+                    padding      : 10px;
                     border-radius: 50%;
-                    text-align: center;
-                    margin: 0 auto;
+                    text-align   : center;
+                    margin       : 0 auto;
 
                     i {
-                        color: #49bce2;
+                        color    : #49bce2;
                         font-size: 20px;
                     }
                 }
 
                 .text-child {
-                    font-size: 17px;
+                    font-size  : 17px;
                     font-weight: 500;
-                    cursor: pointer;
+                    cursor     : pointer;
 
                     &:hover {
                         color: #49bce2;
