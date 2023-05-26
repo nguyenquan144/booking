@@ -13,15 +13,17 @@
         display: flex;
 
         .left-content {
-            width      : 30%;
+            width      : 25%;
             display    : flex;
             align-items: center;
 
             .header-logo {
-                background: url('../../assets/logo.svg') center center no-repeat;
-                height    : 100%;
-                width     : 100%;
-                cursor    : pointer;
+                background  : url('../../assets/logo.svg') center center no-repeat;
+                height      : 100%;
+                width       : 100%;
+                cursor      : pointer;
+                border-style: none;
+
             }
 
             i {
@@ -32,7 +34,7 @@
         }
 
         .center-content {
-            width          : 55%;
+            width          : 50%;
             display        : flex;
             justify-content: space-between;
             align-items    : center;

@@ -15,10 +15,14 @@ export const adminMenu = [
                 //     { name: 'menu.system.system-administrator.user-redux', link: '/system/user-redux' },
                 // ]
             },
-            {
-                name: 'menu.admin.manage-admin', link: '/system/user-admin'
-            },
+            // {
+            //     name: 'menu.admin.manage-admin', link: '/system/user-admin'
+            // },
+            //quản lý ké hoạch khám bệnh của bác sĩ
 
+            {
+                name: 'menu.doctor.manage-schedule', link: '/doctor/manage-schedule'
+            },
         ]
     },
     { //quản lý phong kham
@@ -48,4 +52,17 @@ export const adminMenu = [
 
         ]
     },
+];
+export const doctorMenu = [
+    {
+        name: 'menu.admin.manage-user',
+        menu: [
+            //quản lý ké hoạch khám bệnh của bác sĩ
+            {
+                name: 'menu.doctor.manage-schedule', link: '/doctor/manage-schedule'
+            },
+
+
+        ]
+    }
 ];
