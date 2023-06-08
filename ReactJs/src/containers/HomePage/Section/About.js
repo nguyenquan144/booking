@@ -14,10 +14,16 @@ class About extends Component {
                 <div className='section-about-content'>
                     <div className='content-left'>
                         <iframe width="100%" height="400px"
+                            src="https://www.youtube.com/embed/Y3MgE03prjg"
+                            title="Viện Huyết học - Truyền máu TW ra mắt tổng đài đặt lịch khám chữa bệnh || Cafe sáng VTV3 ||"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+                        </iframe>
+                        {/* <iframe width="100%" height="400px"
                             src="https://www.youtube.com/embed/FyDQljKtWnI"
                             title="CÀ PHÊ KHỞI NGHIỆP VTV1 - BOOKINGCARE - HỆ THỐNG ĐẶT LỊCH KHÁM TRỰC TUYẾN"
                             frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen></iframe>
+                            allowFullScreen></iframe> */}
                     </div>
                     <div className='content-right'>
                         <p>Chào mừng đến với Medicare - đối tác chăm sóc sức khỏe của bạn!
